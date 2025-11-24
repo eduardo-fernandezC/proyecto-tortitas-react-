@@ -3,28 +3,42 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import { Button } from "../../../components/atoms/Button";
 
 describe("Button Component", () => {
-  
+
   it("renderiza el texto correctamente", () => {
-    render(<Button text="Haz click" />);
-    expect(screen.getByText("Haz click")).toBeTruthy();
+    render(<Button text="Enviar" />);
+    const boton = screen.getByRole("button");
+    expect(boton.textContent).toBe("Enviar");
   });
 
   it("ejecuta onClick al hacer click", () => {
     const mockFn = jasmine.createSpy("onClick");
-
     render(<Button text="Click" onClick={mockFn} />);
 
-    fireEvent.click(screen.getByText("Click"));
+    const boton = screen.getByText("Click");
+    fireEvent.click(boton);
 
     expect(mockFn).toHaveBeenCalled();
   });
 
-  it("aplica correctamente las clases CSS", () => {
-    render(<Button text="OK" className="btn-prueba" />);
-    
+  it("aplica className adicional", () => {
+    render(<Button text="Guardar" className="btn-extra" />);
+    const boton = screen.getByText("Guardar");
+
+    expect(boton.className.includes("btn-extra")).toBeTrue();
+  });
+
+  it("incluye siempre la clase base 'custom-btn'", () => {
+    render(<Button text="OK" />);
     const boton = screen.getByText("OK");
-    expect(boton.classList.contains("custom-btn")).toBeTrue();
-    expect(boton.classList.contains("btn-prueba")).toBeTrue();
+
+    expect(boton.className.includes("custom-btn")).toBeTrue();
+  });
+
+  it("usa el tipo de botÃ³n especificado", () => {
+    render(<Button text="Enviar" type="submit" />);
+    const boton = screen.getByRole("button");
+
+    expect(boton.getAttribute("type")).toBe("submit");
   });
 
 });
