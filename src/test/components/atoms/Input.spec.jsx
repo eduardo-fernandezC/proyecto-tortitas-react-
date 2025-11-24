@@ -17,7 +17,8 @@ describe("Input Component", () => {
   it("aplica correctamente el atributo required", () => {
     render(<Input label="Correo" name="correo" required />);
     const input = screen.getByRole("textbox");
-    expect(input).toBeRequired();
+
+    expect(input.required).toBeTrue();
   });
 
   it("dispara el evento onChange correctamente", () => {
