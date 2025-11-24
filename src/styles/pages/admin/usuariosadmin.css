@@ -1,0 +1,23 @@
+.usuarios-admin-container {
+  padding: 30px;
+  background: var(--rosa-bg);
+  min-height: 80vh;
+}
+
+.usuarios-admin-container h1 {
+  color: var(--rosa);
+  font-weight: 700;
+}
+
+.table-striped tbody tr:hover {
+  background: var(--rosa-bg-light);
+}
+
+.btn-delete {
+  background: var(--rosa);
+  color: white;
+}
+
+.btn-delete:hover {
+  background: var(--rosa-dark);
+}

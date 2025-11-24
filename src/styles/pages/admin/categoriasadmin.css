@@ -1,0 +1,24 @@
+.categorias-admin-container {
+  padding: 30px;
+  background: var(--rosa-bg);
+  min-height: 80vh;
+}
+
+.categorias-admin-container h1 {
+  color: var(--rosa);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.categoria-card {
+  background: white;
+  padding: 20px;
+  border: 2px solid var(--rosa-light);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadow);
+  margin-bottom: 20px;
+}
+
+.list-group-item strong {
+  color: var(--rosa);
+}

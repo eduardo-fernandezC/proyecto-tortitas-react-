@@ -1,0 +1,12 @@
+@keyframes latido {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.home-title {
+  animation: latido 3s infinite ease-in-out;
+}

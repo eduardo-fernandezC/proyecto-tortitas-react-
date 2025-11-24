@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background-color: var(--color-fondo);
+  font-family: var(--fuente-secundaria);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.titulo {
+  font-family: var(--fuente-principal);
+  color: var(--color-principal);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

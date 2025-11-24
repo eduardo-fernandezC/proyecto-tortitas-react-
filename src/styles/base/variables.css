@@ -1,0 +1,10 @@
+:root {
+  --color-principal: #c2185b;
+  --color-secundario: #ffa8bd;
+  --color-fondo: #fff5f8;
+  --color-blanco: #ffffff;
+  --color-negro: #000000;
+
+  --fuente-principal: "Bowlby One SC", sans-serif;
+  --fuente-secundaria: "TASA Explorer", sans-serif;
+}

@@ -1,0 +1,31 @@
+@import './base/variables.css';
+@import './base/global.css';
+@import './base/typhograpy.css';
+@import './base/animations.css';
+
+@import './components/atoms/button.css';
+@import './components/atoms/input.css';
+@import './components/atoms/title.css';
+@import './components/atoms/notifications.css';
+
+@import './components/molecules/formfield.css';
+@import './components/molecules/productcard.css';
+
+@import './components/organisms/carouselhome.css';
+@import './components/organisms/header.css';
+@import './components/organisms/footer.css';
+@import './components/organisms/productlist.css';
+@import './components/organisms/productlisttemplate.css';
+
+/* USER */
+@import './pages/user/home.css';
+@import './pages/user/productos.css';
+@import './pages/user/detalle.css';
+@import './pages/user/contacto.css';
+@import './pages/user/carrito.css';
+@import './pages/user/checkout.css';
+@import './pages/user/blog.css';
+
+/* AUTH */
+@import './pages/auth/login.css';
+@import './pages/auth/registro.css';

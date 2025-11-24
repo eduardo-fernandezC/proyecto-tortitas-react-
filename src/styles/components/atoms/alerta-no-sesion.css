@@ -1,0 +1,25 @@
+.alerta-no-sesion-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alerta-no-sesion-box {
+    text-align: center;
+    background: white;
+    border: 1px solid #f3c2d7;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.alerta-no-sesion-box h3 {
+    color: #d63384;
+    font-weight: bold;
+}
+
+.alerta-no-sesion-box p {
+    margin-top: 10px;
+    font-size: 16px;
+}

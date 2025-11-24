@@ -1,0 +1,22 @@
+.form-container {
+  padding: 30px;
+  min-height: 80vh;
+  background: var(--rosa-bg);
+}
+
+.form-container h1 {
+  color: var(--rosa);
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column !important;
+  gap: 18px !important;
+}
+
+.admin-form button {
+  width: fit-content;
+  margin-top: 10px;
+}

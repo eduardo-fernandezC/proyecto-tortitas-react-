@@ -1,0 +1,18 @@
+.imagenes-admin-container {
+  padding: 30px;
+  background: var(--rosa-bg);
+  min-height: 80vh;
+}
+
+.upload-card {
+  background: white;
+  border: 2px solid var(--rosa-light);
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.upload-card label {
+  color: var(--rosa);
+  font-weight: 600;
+}

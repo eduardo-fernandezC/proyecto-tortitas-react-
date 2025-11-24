@@ -1,0 +1,177 @@
+:root {
+  --rosa: #c2185b;
+  --rosa-dark: #a2124a;
+  --rosa-light: #f8bbd0;
+  --rosa-bg: #fff0f6;
+  --rosa-bg-light: #ffeef5;
+  --white: #fff;
+  --txt: #333;
+  --shadow: rgba(194, 24, 91, 0.12);
+  --font: "Inter", sans-serif;
+}
+
+main {
+  background: var(--rosa-bg);
+  min-height: 100vh;
+  padding: 40px 30px;
+  font-family: var(--font);
+}
+
+h1, h2, h3 {
+  color: var(--rosa);
+  font-weight: 700;
+}
+
+
+.admin-form,
+.card {
+  background: white;
+  border: 2px solid var(--rosa-light);
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column !important;
+  gap: 18px !important;
+}
+
+.admin-form label {
+  font-weight: 600;
+  color: var(--rosa);
+}
+
+.admin-form input,
+.admin-form select,
+.admin-form textarea,
+.form-control,
+.form-select {
+  padding: 12px 14px !important;
+  border-radius: 10px !important;
+  border: 2px solid var(--rosa-light) !important;
+  background: #fffafc !important;
+  transition: 0.2s ease !important;
+  width: 100% !important;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus,
+.admin-form select:focus,
+.form-control:focus {
+  outline: none !important;
+  border-color: var(--rosa-dark) !important;
+  box-shadow: 0 0 0 3px rgba(194, 24, 91, 0.25) !important;
+}
+
+.btn,
+button {
+  padding: 10px 18px !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  border: none !important;
+  transition: 0.25s ease !important;
+}
+
+.btn-success,
+.btn-rosa {
+  background: var(--rosa) !important;
+  color: white !important;
+}
+
+.btn-success:hover,
+.btn-rosa:hover {
+  background: var(--rosa-dark) !important;
+}
+
+.btn-primary {
+  background: #0077ff !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background: #005ecc !important;
+}
+
+.btn-danger {
+  background: #d9003f !important;
+  color: white !important;
+}
+
+.btn-danger:hover {
+  background: #b30034 !important;
+}
+
+.table {
+  border-radius: 14px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 14px var(--shadow);
+}
+
+.table thead {
+  background: var(--rosa-light);
+}
+
+.table tbody tr:hover {
+  background: var(--rosa-bg-light);
+  transition: 0.2s ease;
+}
+
+
+.list-group-item {
+  border: 2px solid var(--rosa-light) !important;
+  margin-bottom: 8px;
+  border-radius: 12px !important;
+  background: white !important;
+}
+
+.list-group-item:hover {
+  background: var(--rosa-bg-light) !important;
+}
+
+
+.admin-card {
+  background: white;
+  border: 2px solid var(--rosa-light);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px var(--shadow);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--rosa);
+  box-shadow: 0 6px 18px rgba(194, 24, 91, 0.25);
+}
+
+.admin-card:focus,
+.admin-card:active,
+.admin-card:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.admin-card span {
+  font-size: 48px;
+  color: var(--rosa);
+}
+
+.prod-admin-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid var(--rosa-light);
+  background: #ffe4ef;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+}

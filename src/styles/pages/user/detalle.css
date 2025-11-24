@@ -1,0 +1,8 @@
+.detalle-producto .descripcion {
+  color: #333;
+  line-height: 1.6;
+}
+.precio {
+  color: var(--color-principal);
+  font-weight: bold;
+}

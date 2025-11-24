@@ -1,0 +1,20 @@
+.sabores-admin-container {
+  padding: 30px;
+  background: var(--rosa-bg);
+  min-height: 80vh;
+}
+
+.sabores-admin-container h1 {
+  color: var(--rosa);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sabor-card {
+  background: white;
+  padding: 15px;
+  border: 2px solid var(--rosa-light);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadow);
+  margin-bottom: 12px;
+}

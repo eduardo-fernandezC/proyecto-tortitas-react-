@@ -1,0 +1,9 @@
+h1, h2, h3, h4, h5 {
+  font-family: var(--fuente-principal);
+  color: var(--color-principal);
+}
+
+p {
+  color: #333;
+  line-height: 1.6;
+}

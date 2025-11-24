@@ -1,0 +1,25 @@
+.productos-admin-container {
+  padding: 30px;
+  background: var(--rosa-bg);
+  min-height: 80vh;
+}
+
+.prod-admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prod-admin-header h1 {
+  color: var(--rosa);
+  font-weight: 700;
+}
+
+.prod-admin-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid var(--rosa-light);
+  background: #ffe4ef;
+}

@@ -1,0 +1,9 @@
+.login-card {
+  max-width: 400px;
+  background-color: var(--color-fondo);
+  border-radius: 20px;
+}
+.link {
+  color: var(--color-principal);
+  text-decoration: none;
+}
